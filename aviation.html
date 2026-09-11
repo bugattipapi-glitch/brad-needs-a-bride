@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brad’s Flight Plan — Operation BNAB</title>
+  <meta name="description" content="Follow Brad and Geno across an interactive flight plan toward something real.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1830'/%3E%3Cpath d='m11 35 42-21-13 37-9-12-20-4Z' fill='%23e5bd69'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="aviation-page">
+  <a class="skip-link" href="#flight-board">Skip to flight board</a>
+  <header class="concept-nav">
+    <a class="concept-nav__brand" href="index.html"><span class="concept-nav__mark">B</span> Operation BNAB</a>
+    <nav class="concept-nav__links" aria-label="Concepts">
+      <a href="index.html">All three</a>
+      <a href="bachelor.html">Bachelor</a>
+      <a aria-current="page" href="aviation.html">Aviation</a>
+      <a href="romcom.html">Rom-com</a>
+    </nav>
+  </header>
+  <main>
+    <section class="aviation-masthead">
+      <p class="aviation-masthead__route">Flight BNB 033 · Point Pleasant → Something real</p>
+      <p class="aviation-masthead__status">Now boarding introductions</p>
+    </section>
+
+    <section class="flight-shell">
+      <div class="flight-board" id="flight-board">
+        <p class="eyebrow">Brad’s flight plan</p>
+        <h1>One open route. Plenty worth discovering.</h1>
+        <p class="flight-board__lede">Choose a destination to follow Brad and Geno across the map—and learn what they would bring along for the ride.</p>
+        <div class="departures" aria-label="Brad’s destinations">
+          <div class="departures__head" aria-hidden="true"><span>CODE</span><span>DESTINATION</span><span>STATUS</span></div>
+          <button class="flight-row is-active" type="button" data-flight-stop="shore" data-x="79" data-y="36" data-title="Point Pleasant, New Jersey" data-detail="Home base: beach days, good meals, and the Jersey Shore life Brad genuinely loves.">
+            <span class="flight-row__code">PPB</span><span class="flight-row__name">Point Pleasant</span><span class="flight-row__state">Home base</span>
+          </button>
+          <button class="flight-row" type="button" data-flight-stop="pittsburgh" data-x="74" data-y="38" data-title="Pittsburgh, Pennsylvania" data-detail="Brad’s football loyalty is spoken fluently in black and gold. Sundays are accounted for.">
+            <span class="flight-row__code">PIT</span><span class="flight-row__name">Pittsburgh</span><span class="flight-row__state">Game day</span>
+          </button>
+          <button class="flight-row" type="button" data-flight-stop="austin" data-x="54" data-y="72" data-title="Austin, Texas" data-detail="Family brought Brad’s story to Texas. Apparently subtle matchmaking was never on the itinerary.">
+            <span class="flight-row__code">AUS</span><span class="flight-row__name">Austin</span><span class="flight-row__state">Family route</span>
+          </button>
+          <button class="flight-row" type="button" data-flight-stop="open" data-x="45" data-y="46" data-title="The Open Route" data-detail="He already travels for a living. For the right connection, geography is a starting point—not the ending.">
+            <span class="flight-row__code">ANY</span><span class="flight-row__name">Somewhere worth going</span><span class="flight-row__state">On time</span>
+          </button>
+        </div>
+        <div class="flight-board__cta button-row">
+          <button class="btn btn--primary" type="button" data-dialog-open="aviation-intro">Request a connection</button>
+          <a class="btn btn--ghost" href="#captains-log">Read the captain’s log ↓</a>
+        </div>
+      </div>
+
+      <div class="flight-map" aria-label="Interactive map of Brad’s story">
+        <div class="map-title"><p class="eyebrow">Live route</p><h2>Brad &amp; Geno, en route</h2></div>
+        <svg class="usa-map" viewBox="0 0 960 600" role="img" aria-label="Stylized map of the continental United States">
+          <path d="M112 93 180 73l61 25 51-8 64 21 46-9 67 23 79-6 61 21 76-8 58 33 83 12 70 57-17 41 26 42-33 22-17 58-61 26-37 52-84 17-29 46-84-22-67 12-48-32-56 7-33-35-59-13-31-49-51-20-21-67-35-28 11-43-30-34 18-52-23-44Z"/>
+          <path class="map-route" d="M823 213 C742 225 690 238 625 360 S488 333 432 274"/>
+        </svg>
+        <button class="map-marker is-active" style="left:86%;top:36%" type="button" data-map-stop="shore" data-label="Point Pleasant" aria-label="Point Pleasant"></button>
+        <button class="map-marker" style="left:74%;top:38%" type="button" data-map-stop="pittsburgh" data-label="Pittsburgh" aria-label="Pittsburgh"></button>
+        <button class="map-marker" style="left:54%;top:72%" type="button" data-map-stop="austin" data-label="Austin" aria-label="Austin"></button>
+        <button class="map-marker" style="left:45%;top:46%" type="button" data-map-stop="open" data-label="The open route" aria-label="The open route"></button>
+        <img class="flying-brad" src="assets/brad-geno-plane.png" alt="">
+        <div class="flight-bubble" aria-live="polite"><strong>Point Pleasant, New Jersey</strong><p>Home base: beach days, good meals, and the Jersey Shore life Brad genuinely loves.</p></div>
+      </div>
+    </section>
+
+    <section class="aviation-story" id="captains-log">
+      <div class="aviation-story__copy">
+        <p class="eyebrow">Captain’s log</p>
+        <h2>The quiet kind of impressive.</h2>
+        <p>Brad is reserved but never removed—the kind of person who reads a room, adapts easily, and makes people feel comfortable. He loves fine dining, the beach, friends, family, and the good dog who chose his lap as a landing zone.</p>
+        <p>When a stranger needed a bone-marrow donor, Brad answered the call. He didn’t do it for a story. His family is telling it because it says everything.</p>
+      </div>
+      <div class="aviation-story__photo"><img src="assets/brad-geno-couch.jpg" alt="Brad resting on a couch with Geno tucked beside him"></div>
+    </section>
+
+    <section class="miles-matter">
+      <div><p class="eyebrow">Miles with meaning</p><h2>Already connected? Fly this attention somewhere important.</h2><p>Honor Brad’s grandmother, Lillian, by supporting MS research and families living with the disease.</p></div>
+      <a class="btn" href="https://donate.nationalmssociety.org/pages/1224" rel="noreferrer">Support MS research ↗</a>
+    </section>
+  </main>
+
+  <dialog class="intro-dialog" id="aviation-intro">
+    <div class="dialog-head"><div><p class="eyebrow">Private arrival</p><h2>Request a connection</h2></div><button class="dialog-close" type="button" aria-label="Close" data-dialog-close>×</button></div>
+    <form class="intro-form" data-demo-form>
+      <label>First name<input name="name" autocomplete="given-name" placeholder="Your first name" required></label>
+      <label>Home base<input name="location" autocomplete="address-level1" placeholder="City or region" required></label>
+      <label>What put Brad on your radar?<textarea name="note" placeholder="Tell the ground crew a little about you" required></textarea></label>
+      <p class="form-note">Mockup only. The final route would deliver introductions privately to Brad’s family.</p>
+      <button type="submit">File the introduction</button>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
