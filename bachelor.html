@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meet Brad — The Gentleman</title>
+  <meta name="description" content="Meet Brad: pilot, donor, dog dad, and a genuinely good man from the Jersey Shore.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236b1830'/%3E%3Cpath d='M32 49S11 37 11 23c0-10 13-14 21-4 8-10 21-6 21 4 0 14-21 26-21 26Z' fill='%23f6d595'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bachelor-page">
+  <a class="skip-link" href="#main">Skip to Brad</a>
+  <header class="concept-nav">
+    <a class="concept-nav__brand" href="index.html"><span class="concept-nav__mark">B</span> Operation BNAB</a>
+    <nav class="concept-nav__links" aria-label="Concepts">
+      <a href="index.html">All three</a>
+      <a aria-current="page" href="bachelor.html">Bachelor</a>
+      <a href="aviation.html">Aviation</a>
+      <a href="romcom.html">Rom-com</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="bachelor-hero">
+      <img class="bachelor-hero__photo" src="assets/brad-rose.png" alt="Brad, dressed in a black suit, offering a red rose">
+      <div class="bachelor-hero__ornament" aria-hidden="true"></div>
+      <div class="bachelor-hero__content">
+        <div class="bachelor-hero__copy">
+          <p class="eyebrow">A family-produced love story</p>
+          <h1>Meet Brad.<span>The gentleman behind the rose.</span></h1>
+          <p class="bachelor-hero__lede">He’s 33, a regional airline pilot from Point Pleasant, and far too reserved to make a campaign about himself. Fortunately, his family is not.</p>
+          <div class="button-row">
+            <button class="btn btn--primary" type="button" data-dialog-open="bachelor-intro">Request a rose</button>
+            <a class="btn btn--ghost" href="#five-roses">See why we nominated him ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bachelor-details" aria-label="Brad at a glance">
+      <div class="bachelor-ribbon">
+        <div><strong>Point Pleasant</strong><span>Hometown</span></div>
+        <div><strong>Regional pilot</strong><span>Occupation</span></div>
+        <div><strong>Geno</strong><span>Best friend</span></div>
+        <div><strong>Something real</strong><span>Here for</span></div>
+      </div>
+      <div class="rose-section" id="five-roses">
+        <div class="rose-section__heading">
+          <p class="eyebrow">Five roses. All earned.</p>
+          <h2>The parts of Brad no television edit could improve.</h2>
+          <p>The showmanship gets your attention. These are the reasons his family hopes the right woman stays.</p>
+        </div>
+        <div class="rose-grid">
+          <article class="rose-card"><span class="rose-card__num">01</span><h3>He shows up.</h3><p>For friends, family, and strangers.</p></article>
+          <article class="rose-card"><span class="rose-card__num">02</span><h3>He gave marrow.</h3><p>Simply because someone needed it.</p></article>
+          <article class="rose-card"><span class="rose-card__num">03</span><h3>He chose Geno.</h3><p>A good dog found a very good home.</p></article>
+          <article class="rose-card"><span class="rose-card__num">04</span><h3>He loves well.</h3><p>Family and friendships come first.</p></article>
+          <article class="rose-card"><span class="rose-card__num">05</span><h3>He’s going places.</h3><p>Ideally with someone beside him.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bachelor-story">
+      <div class="bachelor-story__photo"><img src="assets/brad-geno-couch.jpg" alt="Brad relaxing on the couch with Geno"></div>
+      <div class="bachelor-story__copy">
+        <p class="eyebrow">Beyond the first impression</p>
+        <h2>Reserved at first. At home almost anywhere.</h2>
+        <p>Brad is the kind of person who can settle into a quiet beach day, a beautiful dinner, or a room full of friends. He flies for a living, gives without needing applause, and believes the best destination is the one shared with people you love.</p>
+        <button class="btn btn--primary" type="button" data-dialog-open="bachelor-intro">Step into the rose garden</button>
+      </div>
+    </section>
+
+    <section class="bachelor-charity">
+      <p class="eyebrow">Already found your person?</p>
+      <h2>Help us honor someone Brad’s family will always love.</h2>
+      <p>In memory of his grandmother, Lillian, help turn this family adventure into support for MS research and families living with the disease.</p>
+      <a class="btn" href="https://donate.nationalmssociety.org/pages/1224" rel="noreferrer">Support MS research ↗</a>
+    </section>
+  </main>
+
+  <dialog class="intro-dialog" id="bachelor-intro">
+    <div class="dialog-head"><div><p class="eyebrow">A private introduction</p><h2>Request a rose</h2></div><button class="dialog-close" type="button" aria-label="Close" data-dialog-close>×</button></div>
+    <form class="intro-form" data-demo-form>
+      <label>First name<input name="name" autocomplete="given-name" placeholder="Your first name" required></label>
+      <label>Home base<input name="location" autocomplete="address-level1" placeholder="City or region" required></label>
+      <label>What made you stop for Brad?<textarea name="note" placeholder="A little about you—and what caught your attention" required></textarea></label>
+      <p class="form-note">Mockup only. The final version would route introductions privately to Brad’s family.</p>
+      <button type="submit">Send to the rose committee</button>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
