@@ -144,10 +144,11 @@
 
       <div class="rc-leading__copy">
         <p class="rc-kicker">The leading man</p>
-        <h2 class="rc-pop-heading"><span>No tragic flaw.</span><strong>No third-act<br>makeover.</strong></h2>
+        <h2 class="rc-pop-heading"><span>Maybe a</span><strong>Meet Cute<br>Starts Here</strong></h2>
         <p class="rc-intro-copy">Brad is 33, a regional airline co-pilot based near the Jersey Shore, and considerably more comfortable talking to an actual person than performing for the internet.</p>
         <p>He's reserved until the scene gets going, friendly once it does, and happiest near the water, around a good table or with the people he cares about. He is looking for a serious relationship—eventually marriage and children—but first, simply the right woman to meet.</p>
         <p class="rc-script-note">A genuinely good lead. Just missing his co-star.</p>
+        <button class="rc-button rc-button--ink" type="button" data-dialog-open="romcom-intro">Request an introduction <span aria-hidden="true">→</span></button>
       </div>
 
       <div class="rc-billing-blocks" aria-label="Brad at a glance">
@@ -302,34 +303,6 @@
       </div>
     </section>
 
-    <section class="rc-meet-cute" id="introduction">
-      <div class="rc-meet-cute__copy">
-        <p class="rc-kicker">Now casting: one role</p>
-        <h2 class="rc-pop-heading"><span>Maybe the</span><strong>meet-cute<br>starts here.</strong></h2>
-        <p>For yourself or for someone wonderful you know: send a private introduction. Keep it honest, keep it human, and give us enough for a good opening scene.</p>
-        <button class="rc-button rc-button--ink" type="button" data-dialog-open="romcom-intro">Cue the meet-cute <span aria-hidden="true">→</span></button>
-        <small>Self-nominations and thoughtful setups are both welcome. Introductions remain private.</small>
-      </div>
-      <div class="rc-meet-cute__visual">
-        <figure class="rc-meet-cute__rose">
-          <img src="assets/brad-rose.png" alt="Brad offering a red rose in an evening garden">
-          <figcaption>The rose is not subtle. Neither is this website.</figcaption>
-        </figure>
-        <div class="rc-admit-ticket" aria-hidden="true">
-          <div class="rc-admit-ticket__main">
-            <span>Admit one</span>
-            <strong>Meet<br>Brad</strong>
-            <p>One genuinely promising first date</p>
-          </div>
-          <div class="rc-admit-ticket__stub">
-            <span>BNAB</span>
-            <strong>33</strong>
-            <small>NO EXPIRATION</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="rc-credits" id="end-ms">
       <div class="rc-credits__grain" aria-hidden="true"></div>
       <div class="rc-credits__inner">
@@ -360,7 +333,11 @@
       <div><p class="rc-kicker">Private introductions only</p><h2>Cue the meet-cute</h2></div>
       <button class="dialog-close" type="button" aria-label="Close introduction form" data-dialog-close>×</button>
     </div>
-    <form class="intro-form rc-intro-form" data-demo-form data-success-title="Opening scene received" data-success-copy="In the live version, the introduction will be reviewed privately and someone will follow up if it feels like a genuine fit.">
+    <form class="intro-form rc-intro-form" action="https://formsubmit.co/bradneedsabride@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Brad Needs a Bride — New introduction">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://bradneedsabride.com/thanks">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden>
       <fieldset>
         <legend>I am introducing…</legend>
         <label class="rc-radio"><input type="radio" name="introducing" value="myself" checked><span>Myself</span></label>
@@ -368,9 +345,9 @@
       </fieldset>
       <label>First name<input name="name" autocomplete="given-name" placeholder="First name only" required></label>
       <label>Where's the story set?<input name="location" autocomplete="address-level1" placeholder="City or region" required></label>
-      <label>How should we reply?<input name="contact" autocomplete="email" placeholder="Email or Instagram" required></label>
+      <label>How should we reply?<input type="email" name="email" autocomplete="email" placeholder="Your email address" required></label>
       <label>Pitch the opening scene<textarea name="note" placeholder="A little about you—or your friend—and why Brad caught your attention" required></textarea></label>
-      <p class="form-note">Approval mockup only—this form does not send or save anything yet. The launch version will keep submissions private.</p>
+      <p class="form-note">Introductions are emailed to bradneedsabride@gmail.com through FormSubmit and are not posted publicly. A quick spam check follows when you send.</p>
       <button type="submit">Send the opening scene <span aria-hidden="true">→</span></button>
     </form>
   </dialog>
