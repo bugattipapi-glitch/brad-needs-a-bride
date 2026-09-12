@@ -1,9 +1,10 @@
 {
   "cleanUrls": true,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "/romcom"
+      "destination": "/romcom",
+      "permanent": false
     }
   ],
   "headers": [
